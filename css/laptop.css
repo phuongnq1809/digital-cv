@@ -1,0 +1,465 @@
+:root {
+  --primary-color: #199cdb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+}
+
+/* ULTILITIES */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #777;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+a i {
+  color: var(--primary-color);
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+/* BANNER */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/banner.jpg") no-repeat top center;
+  height: 450px;
+  padding-top: 100px;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.banner p {
+  color: #fff;
+}
+
+/* NAVBAR */
+.nav-bar {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.nav-bar a {
+  padding: 20px 30px;
+  border-left: 1px solid #f3f3f3;
+}
+
+.nav-bar a:hover {
+  background-color: #f7f7f7;
+}
+
+.nav-bar a:last-child {
+  border-right: 1px solid #f3f3f3;
+}
+
+.nav-bar a.border-before-avatar {
+  border-right: 1px solid #f3f3f3;
+}
+
+/* Avatar */
+.nav-bar-avatar {
+  margin: 0 100px;
+}
+
+.nav-bar-avatar img {
+  position: absolute; /* to nav-bar */
+  border: 3px solid #fff;
+  border-radius: 50%;
+  width: 115px;
+  height: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+/* END NAVBAR */
+
+/* THONG TIN */
+.info-container {
+  background-color: #f7f7f7;
+  line-height: 1.5;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.info-container h2 {
+  margin-bottom: 10px;
+}
+
+/* Muc tieu nghe nghiep */
+.info-container .target {
+  background-color: #f7f7f7;
+  padding: 30px;
+  text-align: justify;
+}
+
+/* Thong tin ca nhan */
+.info-container .personal-info,
+.info-container .email-regex {
+  background-color: #f3f3f3;
+  padding: 30px;
+}
+
+.personal-info ul {
+  list-style: none;
+  margin-bottom: 5px;
+  padding-left: 0;
+}
+
+.personal-info ul li span {
+  font-weight: bold;
+}
+
+.info-container .email-regex .btn {
+  background-color: var(--primary-color) !important;
+  color: #fff;
+}
+/* END THONG TIN */
+
+/* LY LICH */
+.cv-container {
+  margin-bottom: 30px;
+}
+
+.cv-item {
+  height: 100%;
+}
+
+.cv-item-icon {
+  font-size: 25px;
+  text-align: center;
+}
+
+.cv-item-content {
+  margin-top: 20px;
+}
+
+.cv-item-content ul {
+  list-style-image: url("../images/circle.svg");
+  padding-left: 14px;
+  font-size: 14px;
+}
+
+.cv-item-content ul li {
+  margin-bottom: 10px;
+}
+.cv-item-content ul li:last-child {
+  margin-bottom: 0;
+}
+
+.cv-item-content ul li p {
+  margin-bottom: 5px;
+}
+
+.cv-item-content .now {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 5px;
+}
+
+/* Ky nang - Ngon ngu */
+.skill-lang {
+  font-size: 14px;
+}
+
+.skill-lang-title {
+  margin-bottom: 0;
+}
+
+.skill-lang-level {
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.skill-lang-level .level {
+  display: inline-block;
+  width: 45px;
+  height: 2px;
+  background-color: #f3f3f3;
+  margin-right: 10px;
+}
+
+.skill-lang-level .level:last-child {
+  margin-right: 0;
+}
+
+.skill-lang-level .level-on {
+  background-color: var(--primary-color);
+}
+
+/* So thich */
+.hobby {
+  font-size: 14px;
+}
+
+.hobby-item-icon {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.hobby-item-icon i {
+  color: var(--primary-color);
+  font-size: 15px;
+}
+/* End So thich */
+
+/* Button View more view less */
+.show-info {
+  width: auto;
+  font-size: 14px;
+  margin-top: 15px;
+  padding: 3px 10px;
+  background-color: #eee8aa;
+  border: none;
+  border-radius: 10px;
+}
+
+.show-info:hover {
+  background-color: #e2d86a;
+}
+/* END LY LICH */
+
+/* CHUNG CHI - GIAI THUONG */
+#certificate {
+  background-color: #f7f7f7;
+}
+
+.cer-content {
+  font-size: 14px;
+  border-bottom: 1px solid #d6c08d;
+}
+
+.cer-content:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.cer-item {
+  border-right: 1px solid #d6c08d;
+  flex-basis: 50%;
+}
+
+.cer-item:last-child {
+  border-right: none;
+  margin-right: 0;
+}
+
+.cer-item img {
+  width: 100%;
+}
+
+.cer-item-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* END CHUNG CHI - GIAI THUONG */
+
+/* DU AN */
+.project-item {
+  border: 1px solid #f3f3f3;
+  font-size: 14px;
+}
+
+.project-item img {
+  width: 100%;
+}
+
+.project-item-name,
+.project-item-year {
+  border-bottom: 1px solid #f3f3f3;
+  padding: 10px;
+}
+
+.project-item-name {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+}
+
+.project-item-year {
+  text-align: center;
+}
+
+.project-item-year span:first-child {
+  background-color: var(--primary-color);
+  color: #fff;
+  margin-right: 7px;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.project-item-year .location {
+  margin-right: 7px;
+}
+
+.project-item-desc ul {
+  list-style: none;
+  width: 100%;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.project-item-desc ul li {
+  border-bottom: 1px solid #f3f3f3;
+  padding: 7px;
+}
+
+.project-item-desc ul li:last-child {
+  border-bottom: none;
+}
+
+.project-item-desc-title {
+  flex: 0 0 35%;
+}
+
+.project-item-desc-content {
+  line-height: 1.4;
+  word-break: break-word;
+}
+
+.project-item-desc-content p {
+  margin-bottom: 0;
+}
+
+.project-item-desc-content a:link,
+.project-item-desc-content a:visited {
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.btn-project-charter a:link,
+.btn-project-charter a:visited {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.btn-project-charter a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
+#footer {
+  background-color: #f7f7f7;
+}
+
+.footer-container {
+  padding: 30px;
+}
+
+.footer-container i {
+  font-size: 20px;
+}
+
+/* PROJECT CHARTER */
+.project-charter-title {
+  background-color: #1484b8;
+  text-align: center;
+  color: #fff;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.project-charter-title h1 {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.project-charter-title a:link,
+.project-charter-title a:visited,
+.project-charter-title a i {
+  color: #fff;
+}
+
+.project-charter-title a:hover {
+  text-decoration: underline;
+}
+
+.project-charter-content {
+  background-color: #199cdb;
+  color: #000;
+  font-size: 14px;
+
+  /*  */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 15px;
+}
+
+.pc-item {
+  background-color: #ffffffcc;
+  padding: 10px;
+}
+
+.pc-item h2 {
+  font-size: 18px;
+  color: var(--primary-color);
+  border-bottom: 1px solid #999;
+  padding-bottom: 5px;
+}
+
+.pc-goals .pc-item-wrap {
+  border-bottom: 1px dotted #999;
+}
+
+.pc-timeline .pc-item-wrap-content {
+  border-bottom: 1px dotted #199cdb;
+  flex-grow: 1;
+}
+
+.pc-item-wrap-icon {
+  font-size: 20px;
+  flex: 0 0 15%;
+}
+
+.pc-item-wrap-icon img {
+  width: 50px;
+  height: auto;
+}
+
+.pc-timeline .pc-item-wrap-icon {
+  font-size: 25px;
+  color: #a64dff;
+}
+
+.pc-item-wrap-content p {
+  margin-bottom: 0;
+}
+
+.pc-goals {
+  grid-column: 1 / span 2;
+}
+
+.pc-timeline {
+  grid-area: 1 / 4 / span 2 / span 1; /* row-line 1, col-line 4, row span 2, col span 1 */
+}
+
+.pc-scopes {
+  grid-column: 1 / span 2;
+}
