@@ -1,0 +1,49 @@
+/* Tablets and under */
+@media (max-width: 768px) {
+  /* Hidden avatar */
+  .nav-bar-avatar {
+    display: none;
+  }
+
+  .nav-bar a.border-before-avatar {
+    border: none;
+  }
+
+  /* Project Charter */
+  .project-charter-content {
+    grid-template-columns: 1fr;
+  }
+
+  .pc-goals {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .pc-scopes {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .pc-team {
+    grid-column: 1 / 2;
+    grid-row: 3/4;
+  }
+
+  .pc-primary {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+
+  .pc-timeline {
+    grid-column: 1 / 2;
+    grid-row: 5 / 6;
+  }
+
+  .pc-timeline .pc-item-wrap {
+    border-bottom: 1px dotted #199cdb;
+  }
+
+  .pc-timeline .pc-item-wrap-content {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,27 @@
+/* Mobiles */
+@media (max-width: 576px) {
+  /* Hidden avatar */
+  .nav-bar-avatar {
+    display: none;
+  }
+
+  .nav-bar a {
+    display: block;
+    border: none;
+    padding: 12px 0 12px 35%;
+  }
+
+  /* CHUNG CHI */
+  .cer-content {
+    border: none;
+  }
+
+  .cer-item {
+    border-right: none;
+    border-bottom: 1px solid #d6c08d;
+    margin-bottom: 20px;
+  }
+
+  /* Project Charter */
+  /* The same with Tablet screen */
+}
